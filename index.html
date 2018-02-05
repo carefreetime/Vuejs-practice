@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Vue.js practice</title>
+</head>
+<body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.3/vue.js"></script>
+
+<div id="app">
+  {{message}}
+</div>
+  
+<div id="app2">
+  <span v-bind:title="message2">
+    123
+  </span>
+</div>
+
+<div = id="app3">
+  <p v-if="seen">
+    you can't see me.
+  </p>
+</div>
+  
+<div id="app4">
+  <ol>
+    <li v-for="todo in todos">
+      {{todo.text}}
+    </li>
+  </ol>
+</div>
+  
+<div id="app5">
+  <p>{{message5}}</p>
+  <button v-on:click="reverseMessage">Reverse</button>
+</div>
+  
+<div id="app6">
+  <p>{{message6}}</p>
+  <input v-model="message6">
+
+<script src="script.js"></script>
+
+</body>
+</html>
